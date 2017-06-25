@@ -8,8 +8,8 @@
 		<h1>Chatroom</h1>
 
 		<div id="app">
-			<example>
-			</example>
+			<chat-log :messages="messages"></chat-log>
+			<chat-composer v-on:messagesent="addMessage"></chat-composer>
 		</div>
 	</div>
 
